@@ -2,7 +2,7 @@
 
 Oh my. This provides a friendly Mac GUI interface for burning in subtitles to videos using ffmpeg. Requires Mac OS Mavericks or higher, I think. ffmpeg can accept a very wide range of video types, which is very useful. It's recommended that you save the output as an mp4 as ffmpeg is set to use H264/AAC as the output codecs.
 
-This was built to solve the problem of not-super-tech instructional technologists being faced with the annoying difficult task of burning subtitles into a video. It's insane that we don't have a friendly, free GUI for this simple task. So I built one. It's a bit janky and hacky, but it works.
+This was built to solve the problem of not-super-tech instructional technologists at [Emerson College](http://www.emerson.edu/) (I work there) being faced with the annoyingly difficult task of burning subtitles into a video. It's insane that we don't have a friendly, free GUI for this simple task. So I built one. It's a bit janky and hacky, but it works.
 
 `index.html` is the main interface; `app.js` is the main application code. Check 'em out.
 
