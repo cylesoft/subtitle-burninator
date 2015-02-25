@@ -1,0 +1,14 @@
+{
+    "name": "subtitle-burner",
+    "main": "index.html",
+    "description": "Takes video and subtitle files and makes a new video with the subtitles burned in.",
+    "version": "0.1.0",
+    "window": {
+        "title": "Amazing Subtitle Burn-in-ator",
+        "toolbar": false,
+        "width": 800,
+        "height": 500,
+        "min_width": 600,
+        "min_height": 500
+    }
+}

@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+body, input {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 18px;
+}
+body {
+    padding: 1em;
+}
+div.dropbox {
+    padding: 1em;
+    border: 3px dotted red;
+    background-color: pink;
+    border-radius: 4px;
+}
+input.button {
+    display: inline-block;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0.8rem 1rem;
+    color: white;
+    background-color: #27981B;
+    border-radius: 3px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: all 300ms ease;
+    border: none;
+}
+input.button:hover {
+    background-color: green;
+}
+div#output-text {
+    font-family: Monaco, "Courier New", monospace;
+}
+</style>
+</head>
+<body>
+<h1>Amazing Subtitle Burn-in-ator</h1>
+<p>This simply takes a video file and a subtitle file (SRT format) as input and transcodes them using ffmpeg into one video with the subtitles burned in.</p>
+<div id="input">
+<div class="dropbox" id="video-drop-box">Drop video file here!</div>
+<div class="dropbox" id="subtitle-drop-box">Drop subtitle SRT file here!</div>
+<p>And what do you want the final file to be saved as (should be .mp4):</p>
+<p><input type="file" id="output-file" nwsaveas="burned-video.mp4" /></p>
+<p><input type="button" class="button" id="go" value="BURN BABY BURN" /></p>
+</div>
+<div id="output" style="display:none;">
+<p>Working...</p>
+<div id="output-text"></div>
+</div>
+<div id="done" style="display:none;">
+<p>All done!</p>
+<p><input type="button" value="Show Me The File!" class="button" id="show-output-btn" />
+<p>Or, <a href="index.html">do it again!</a></p>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
